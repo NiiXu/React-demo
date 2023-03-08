@@ -29,6 +29,7 @@ class ClassComponent extends React.PureComponent {
     //     }
     // }
 
+    //加载数据请求
     componentDidMount() {
         // const div = document.getElementById('xxx')
         // const {width} = div.getBoundingClientRect()
@@ -36,6 +37,16 @@ class ClassComponent extends React.PureComponent {
         const div = this.divRef.current
         const {width} = div.getBoundingClientRect()
         this.setState({width})
+    }
+
+    //视图更新后执行
+    componentDidUpdate(prevProps, prevState, snapshot) {
+
+    }
+
+    //组件将要被移除后销毁的代码
+    componentWillUnmount() {
+
     }
 
     render() {
